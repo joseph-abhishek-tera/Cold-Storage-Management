@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.StartActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:id="@+id/itemFarmer"
+            >
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/farmer"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:id="@+id/i1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer"
+                android:textSize="22sp"
+                android:fontFamily="@font/bold"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_primary_color"
+                android:layout_below="@id/i1"
+                android:layout_centerHorizontal="true"
+                />
+
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#c6c6c6"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="?android:selectableItemBackground"
+            android:id="@+id/itemManager"
+            >
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/manager"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:id="@+id/i2"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manager"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_primary_color"
+
+                android:textSize="22sp"
+                android:fontFamily="@font/bold"
+                android:layout_below="@id/i2"
+                android:layout_centerHorizontal="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Storage"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/medium"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/t1"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/t1"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Location:"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:textSize="15sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_bg"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:id="@+id/spinner"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Cold storage Name"
+            android:fontFamily="@font/medium"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/inputStorageName"
+            android:inputType="textCapSentences"
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:weightSum="2"
+            android:layout_marginEnd="10dp"
+
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_bg"
+                android:hint="Capacity"
+                android:fontFamily="@font/medium"
+
+                android:layout_marginTop="7dp"
+                android:inputType="number"
+                android:id="@+id/inputCapacity"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_bg"
+                android:layout_marginTop="7dp"
+                android:text="TON"
+                android:fontFamily="@font/medium"
+                android:id="@+id/qText"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="5dp"
+
+                />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="Per Ton Price"
+            android:fontFamily="@font/medium"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/inputPerTon"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="@drawable/edit_bg"
+            android:hint="What Type Of Crops They Store"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/inputType"
+            android:fontFamily="@font/medium"
+
+            android:inputType="textCapSentences"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:weightSum="2"
+            android:layout_marginEnd="10dp"
+
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_bg"
+                android:hint="Occupied Space"
+                android:layout_marginTop="7dp"
+                android:inputType="number"
+                android:id="@+id/inputOccupied"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/edit_bg"
+                android:layout_marginTop="7dp"
+                android:text="KG"
+                android:fontFamily="@font/medium"
+                android:id="@+id/o_bags_count"
+
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="5dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:weightSum="2"
+            android:layout_marginEnd="10dp"
+
+            >
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/medium"
+
+                android:background="@drawable/edit_bg"
+                android:hint="Remaining Space"
+                android:layout_marginTop="7dp"
+                android:inputType="number"
+                android:id="@+id/inputRemaining"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:fontFamily="@font/medium"
+                android:id="@+id/r_bags_count"
+
+                android:background="@drawable/edit_bg"
+                android:layout_marginTop="7dp"
+                android:text="KG"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:layout_marginStart="5dp"
+
+                />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            app:cornerRadius="5dp"
+            android:text="Update Storage"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/btnAdd"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

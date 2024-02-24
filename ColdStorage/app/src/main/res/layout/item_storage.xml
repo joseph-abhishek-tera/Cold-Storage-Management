@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="6dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Storage Name"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="First Storage"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/name"
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Stored crops"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="Riced"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/type"
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Capacity"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="100"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/capacity"
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Price (Per Ton)"
+                    android:textSize="15sp"
+                    android:id="@+id/priceInfo"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="₹199"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/pricePerTon"
+                    android:textColor="@color/black"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Occupied"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="50KG"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:gravity="center"
+                    android:id="@+id/occupied"
+                    android:textColor="@android:color/holo_red_light"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Remaining"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="50KG"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:id="@+id/remaining"
+                    android:textColor="@color/button_color"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#c6c6c6"
+                android:layout_marginTop="6dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:text="Location"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    tools:text="vijayawada"
+                    android:fontFamily="@font/medium"
+                    android:textSize="17sp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:id="@+id/location"
+                    android:textColor="@color/text_primary_color"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/buttonsLyt"
+                android:visibility="gone"
+                >
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Delete"
+                    android:background="@drawable/edit_bg"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnDelete"
+                    android:backgroundTint="@color/accent_color"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Update"
+                    android:background="@drawable/edit_bg"
+                    android:padding="5dp"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:id="@+id/btnUpdate"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/button_color"
+                    />
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get"
+                android:background="@drawable/edit_bg"
+                android:padding="5dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:id="@+id/btnGet"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/button_color"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

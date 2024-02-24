@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "357008945753",
+    "firebase_url": "https://coldstoragemanagement-54dbc-default-rtdb.firebaseio.com",
+    "project_id": "coldstoragemanagement-54dbc",
+    "storage_bucket": "coldstoragemanagement-54dbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357008945753:android:96ce849d9dda23a308b748",
+        "android_client_info": {
+          "package_name": "com.farmers.coldstorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsCSCwUCHMIpyud1ndRxuJom7iQCGCZUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357008945753:android:506d5f5eec5de0c808b748",
+        "android_client_info": {
+          "package_name": "com.prasaddevelops.coldstorage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsCSCwUCHMIpyud1ndRxuJom7iQCGCZUY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
